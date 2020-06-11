@@ -7,9 +7,9 @@ import (
 	"strings"
 )
 
-type mathStruct struct{}
+type MathStruct struct{}
 
-func (mathStruct) operate(entrada string, operador string) int {
+func (MathStruct) Operate(entrada string, operador string) int {
 	numeros := strings.Split(entrada, operador)
 	num1 := parsear(numeros[0])
 	num2 := parsear(numeros[1])
